@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>CatPhotoApp</title>
+  <meta charset="UTF-8">
+</head>
+<body> <!-- Responsible for rendering all the page elements -->
+  <h1>CatPhotoApp</h1> <!-- Should be used only one <h1> tag per page -->
+  <main>
+    <section>
+      <h2>Cat Photos</h2>
+      <!-- TODO: Add link to cat photos -->
+      <p>Click here to view more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a></p>
+      <!-- target="_blank" is an attribute of <a> that opens the link in a new tab -->
+      <a href="https://freecatphotoapp.com" target="_blank">
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+      </a>
+    </section>
+    <section>
+      <h2>Cat Lists</h2>
+      <h3>Things cats love:</h3>
+      <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate">
+        <figcaption>Cats <em>love</em> Lasagna</figcaption>
+        <!-- <em> is different from <i> element:
+        <i> just turns the text into italic;
+        <em> emphazises the text. -->
+      </figure>
+      <h3>Top 3 things cats hate:</h3>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field">
+        <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Cat form</h2>
+      <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <fieldset>
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+          <!-- Inputs and Buttons are inline elements, that means they won't appear on new lines-->
+          <label><input type="radio" id="indoor" name="selectable" value="indoor" checked>Indoor</label>
+          <label><input type="radio" id="outdoor" name="selectable" value="outdoor">Outdoor</label>
+        </fieldset>
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <input type="checkbox" id="loving" name="personality" value="loving" checked><label for="loving">Loving</label>
+          <input type="checkbox" id="lazy" name="personality" value="lazy"><label for="lazy">Lazy</label>
+          <input type="checkbox" id="energetic" name="personality" value="energetic"><label for="energetic">Energetic</label>
+          <!-- It's important to organize forms data (checkboxes, radio buttons, etc) with name/value 
+          because this is how the information will be sent to another web page. In this case: 
+          "personality/loving", "personality/lazy", etc... -->
+        </fieldset>
+        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>No Copyright - <a href="https://github.com/szaire" target="_blank">github.com/szaire</spam></p>
+  </footer>
+</body>
+</html>
